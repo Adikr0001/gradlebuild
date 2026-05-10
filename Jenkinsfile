@@ -11,19 +11,19 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'gradle build'
+                sh './gradle build'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'gradle test'
+                sh './gradle test'
             }
         }
 
         stage('Run Application') {
             steps {
-                sh 'gradle run'
+                sh './gradle run'
             }
         }
 
